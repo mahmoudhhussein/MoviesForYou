@@ -137,12 +137,17 @@ header {
     width: 100%;
     z-index: 2;
     min-height: 100vh;
-    background-image: url(../imgs/heading2.jpg);
+    background-image: url(../imgs/1052327.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
     animation: change-background 20s linear infinite;
     -webkit-animation: change-background 20s linear infinite;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
 }
 
 header.container{
@@ -674,10 +679,128 @@ font-size: 18px;
     } 
     
 /* End Trusted */
+/* Start subscribe  */
+.subscribe{
+    padding-top: var(--main-padding-top);
+    padding-bottom: var(--main-padding-bottom);
+    background-color:#0B0B0B;
+}
 
+.subscribe .content{
+    text-align: center;
+}
+.subscribe .content h2{
+    font-size: 32px;
+    font-weight: bold;
+    color:white;
+    margin-bottom: -15px;
+}
+.subscribe .content p{
+    color:white;
+}
+.subscribe .form input{
+    outline: none;
+    caret-color: red;
+}
+.subscribe .form input[type="text"]{
+    padding: 20px 90px;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
 
-
-
+.subscribe .form input[type="submit"]{
+    padding: 22px 40px;
+    background-color: red;
+    color:white;
+    font-weight: bold;
+    border-style: none;
+}
+.subscribe .form .line{
+    border-bottom: 1px solid rgb(237 237 237 / 50%);
+    margin-top: 60px;
+    z-index: 1;
+}
+/* End subscribe  */
+/* Start footer */
+footer{
+    padding-top: var(--main-padding-top);
+    padding-bottom: var(--main-padding-bottom);
+    background-color:#0B0B0B;
+}
+footer .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(260px,1fr));
+    gap: 30px;
+}
+footer .container .text{
+    position: relative;
+}
+@media (max-width:767px){
+    footer .container .text{
+        text-align: center;
+    }
+}
+footer .container .text h5{
+    color:white;
+    font-size: 18px;
+}
+footer .container .text p{
+    color:white;
+    letter-spacing: 2px;
+    /* margin-top: 60px; */
+}
+footer h6 {
+    color:white;
+    font-size: 18px;
+    position: relative;
+    margin-left: 20px;
+    top: -10px;
+}
+@media (max-width:767px){
+    footer h6{
+        text-align: center;
+    }
+}
+footer ul {
+    margin-left: 20px;
+    color:white
+}
+footer ul li {
+    position: relative;
+    top: -30px;
+    padding-top: 10px;
+    
+}
+@media (max-width:767px){
+    footer ul li{
+        text-align: center;
+    }
+}
+footer ul li a {
+    color:white
+}
+footer ul li a:hover {
+    color:red
+}
+.copy{
+    background-color: black;
+    color:white;
+    text-align: center;
+    top: 20px;
+    margin: 0;
+}
+.copy i{
+    color:red
+}
+.copy span{
+    color:red; 
+    font-weight: bold;
+    cursor: pointer;
+}
+/* End footer */
 
 
 
@@ -701,10 +824,10 @@ font-size: 18px;
 @keyframes change-background {
     0%,
     100% {
-    background-image: url("../imgs/heading1.jpg");
+    background-image: url("../imgs/1052327.jpg");
 }
 50% {
-    background-image: url("../imgs/heading2.jpg");
+    background-image: url("../imgs/parker.jfif");
 }
 }
 /* End Anitmation */
